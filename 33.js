@@ -7,17 +7,23 @@ const numSubjects = 10;
 const grades = [];
 
 for (let i = 1; i <= numSubjects; i++) {
-  const grade = parseFloat(prompt(`Ingresa la calificacion de la materia ${i}:`));
+  const subjectName = prompt(`Ingresa el nombre de la materia ${i}:`);
+  const grade = parseFloat(prompt(`Ingresa la calificación de la materia ${subjectName}:`));
+
   if (isNaN(grade)) {
-    console.log("Eso no es un numero");
-    window.alert("Eso no es un numero");
-    i--;
+    console.log("Eso no es un número");
+    window.alert("Eso no es un número");
+    i--; // Evitar uso de do while
   } else {
-    grades.push(grade);
+    const subjectData = {
+      materia: subjectName,
+      calificacion: grade
+    };
+    grades.push(subjectData);
   }
 }
 
-const sumOfGrades = grades.reduce((accumulator, grade) => accumulator + grade, 0);
+const sumOfGrades = grades.reduce((accumulator, subjectData) => accumulator + subjectData.calificacion, 0);
 const average = sumOfGrades / numSubjects;
 
 console.log(`El promedio de las calificaciones es: ${average}`);
