@@ -1,0 +1,30 @@
+[
+  {
+    "ID": 3,
+    "NOMBRE": "Maria",
+    "APELLIDOS": "Gonzalez",
+    "DIRECCION": "789 Oak St",
+    "ESTADO": "Activo"
+  },
+  {
+    "ID": 4,
+    "NOMBRE": "Carlos",
+    "APELLIDOS": "Rodriguez",
+    "DIRECCION": "101 Pine St",
+    "ESTADO": "Inactivo"
+  },
+  {
+    "ID": 33,
+    "NOMBRE": "Maria3",
+    "APELLIDOS": "Gonzalez4",
+    "DIRECCION": "7894 Oak St",
+    "ESTADO": "Inactivo"
+  },
+  {
+    "ID": 44,
+    "NOMBRE": "Carlos2",
+    "APELLIDOS": "Rodriguez",
+    "DIRECCION": "1012 Pine St",
+    "ESTADO": "Inactivo"
+  }
+]
