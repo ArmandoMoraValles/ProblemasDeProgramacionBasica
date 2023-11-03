@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>26.- Introducir una frase por teclado e imprimirla en el centro de la pantalla. 
+    </title>
+</head>
+<body>
+    <input type="text" id="inputText" placeholder="Ingresa una frase">
+    <button id="submitButton">Mostrar en el centro</button>
+    <div id="centeredText" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+    <script>
+        document.getElementById('submitButton').addEventListener('click', function() {
+            const inputText = document.getElementById('inputText').value;
+            const centeredText = document.getElementById('centeredText');
+
+            centeredText.textContent = inputText;
+        });
+    </script>
+</body>
+</html>
