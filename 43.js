@@ -31,4 +31,5 @@ do {
             });
         }
     });
+    count++;
 } while (count < numOfRepeats)
